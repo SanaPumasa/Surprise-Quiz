@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #4d5154;
+            display: flex; /* Make the body a flex container */
+            justify-content: center; /* Center horizontally */
+            align-items: flex-start; /* Align to the top instead of center */
+            min-height: 100vh; /* Ensure body takes at least full viewport height */
+            margin: 0; /* Remove default body margin */
+            flex-direction: column; /* Stack items vertically if there are multiple */
+        }
+
+        .name-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for the container */
+            padding: 20px 40px; /* Padding inside the container */
+            border-radius: 10px; /* Rounded corners for the container */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for "floating" effect */
+            text-align: center; /* Center the text inside the container */
+            margin-top: 50px; /* Pushes the container down from the top by 50px */
+            /* No explicit width, so it will shrink to fit content + padding */
+            /* You could add max-width: 80% or similar if it gets too wide */
+        }
+
+        .name-text {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            color: whitesmoke;
+            margin-bottom: 5px; /* Space between name and tagline */
+        }
+
+        .tagline-text {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 10px;
+            color: whitesmoke;
+            margin-top: 0; /* Remove default top margin */
+        }
+
+        /* New styles for the description */
+        .description-text {
+            color: whitesmoke; /* Text color for the description */
+            font-family: 'Arial', sans-serif; /* A clear, readable font */
+            font-size: 16px; /* Adjust font size as needed */
+            width: 60%; /* Set a width for the text to wrap and justify effectively */
+            max-width: 700px; /* Prevent it from getting too wide on large screens */
+            text-align: justify; /* This makes the text justified */
+            margin-top: 30px; /* Space between the name container and description */
+            padding: 0 20px; /* Add some padding on the sides if needed */
+            line-height: 1.6; /* Improve readability */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="name-container">
+        <p class="name-text">Derek Radley R. Guilas</p>
+        <p class="tagline-text">Portfolio</p>
+    </div>
+
+    <div class="description-text">
+        <p>Junior Developer, a graduate from Harvard University with 21 years of experience in coding.</p>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
