@@ -1,20 +1,18 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Derek Radley R. Guilas - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #4d5154;
-            display: flex; /* Make the body a flex container */
+            display: flex;
             justify-content: center; /* Center horizontally */
-            align-items: flex-start; /* Align to the top instead of center */
+            align-items: center; /* Center vertically */
             min-height: 100vh; /* Ensure body takes at least full viewport height */
             margin: 0; /* Remove default body margin */
-            flex-direction: column; /* Stack items vertically if there are multiple */
+            flex-direction: column; /* Stack items vertically */
         }
 
         .name-container {
@@ -23,9 +21,8 @@
             border-radius: 10px; /* Rounded corners for the container */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for "floating" effect */
             text-align: center; /* Center the text inside the container */
-            margin-top: 50px; /* Pushes the container down from the top by 50px */
-            /* No explicit width, so it will shrink to fit content + padding */
-            /* You could add max-width: 80% or similar if it gets too wide */
+            margin-top: 0; /* Remove top margin as flexbox will handle centering */
+            margin-bottom: 30px; /* Add space below the name container */
         }
 
         .name-text {
@@ -43,7 +40,6 @@
             margin-top: 0; /* Remove default top margin */
         }
 
-        /* New styles for the description */
         .description-text {
             color: whitesmoke; /* Text color for the description */
             font-family: 'Arial', sans-serif; /* A clear, readable font */
@@ -51,7 +47,7 @@
             width: 60%; /* Set a width for the text to wrap and justify effectively */
             max-width: 700px; /* Prevent it from getting too wide on large screens */
             text-align: justify; /* This makes the text justified */
-            margin-top: 30px; /* Space between the name container and description */
+            margin-top: 0; /* Remove top margin as flexbox will handle spacing */
             padding: 0 20px; /* Add some padding on the sides if needed */
             line-height: 1.6; /* Improve readability */
         }
@@ -65,7 +61,7 @@
     </div>
 
     <div class="description-text">
-        <p>Junior Developer, a graduate from Harvard University with 21 years of experience in coding.</p>
+        <p>Junior Developer, a graduate from Harvard University with 21 years of experience in coding (Python, CSS, HTML, C++, JavaScript).</p>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
